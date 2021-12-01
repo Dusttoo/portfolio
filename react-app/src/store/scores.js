@@ -17,7 +17,6 @@ const addScore = (score) => ({
 export const getScores = () => async (dispatch) => {
   const response = await fetch('/api/tetris');
   const scores = await response.json();
-  console.log(scores)
   dispatch(loadScores(scores));
   return response
 };
@@ -37,7 +36,7 @@ const scoreReducer = (state = {}, action) => {
     switch(action.type) {
     case LOAD_SCORES:
       const newScore = { ...state };
-      action.scores.forEach(score => {
+      action.scores.scores.forEach(score => {
         newScore[score.id] = score;
       });
       return newScore;
