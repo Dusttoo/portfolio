@@ -25,9 +25,6 @@ def upgrade():
     sa.PrimaryKeyConstraint('id', 'score'),
     sa.UniqueConstraint('name')
     )
-    op.drop_table('HighSocres')
-    op.drop_table('SequelizeMeta')
-    op.drop_table('Users')
     # ### end Alembic commands ###
 
 

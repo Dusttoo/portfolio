@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from app.models.score import Score, db
+from app.models.high_score import Score, db
 from app.forms.score_form import ScoreForm
 
 tetris_routes = Blueprint('tetris', __name__)

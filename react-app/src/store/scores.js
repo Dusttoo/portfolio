@@ -17,6 +17,7 @@ const addScore = (score) => ({
 export const getScores = () => async (dispatch) => {
   const response = await fetch('/api/tetris');
   const scores = await response.json();
+  console.log(scores)
   dispatch(loadScores(scores));
   return response
 };

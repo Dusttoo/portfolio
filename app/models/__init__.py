@@ -1,3 +1,3 @@
 from .db import db
 from .user import User
-from .score import Score
+from .high_score import Score
