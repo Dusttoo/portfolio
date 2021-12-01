@@ -1,0 +1,344 @@
+/* 
+Dark Blue: #293241
+Med Blue: #3d5a80
+grey blue: #98c1d9
+orange: #ee6c4d */
+
+.landing-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #3d5a80; */
+    padding-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+.landing-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 5px solid #293241;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.profile-img {
+    max-height: 30vw;
+    border-radius: 20%;
+    margin: 10px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.landing-title {
+    color: #ee6c4d;
+    font-size: 6vw;
+    padding-bottom: 5px;
+}
+
+.header-info {
+    font-style: italic;
+    font-size: 4vw;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-top: 20px;
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    flex-wrap: wrap; */
+
+}
+
+.skill {
+    font-size: 2.5vw;
+    margin: 5px;
+    padding: 8px;
+    border-left: 2px solid #ee6c4d;
+    
+}
+
+.tagline {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 2.5vw;
+
+}
+
+.landing-cat {
+    font-size: 3.5vw;
+    padding: 3px;
+    /* border: 3px solid #ee6c4d; */
+    border-radius: 8px;
+    background-color: white;
+    color: #293241;
+}
+
+.landing-cat:hover {
+    color: #ee6c4d;
+    border-bottom: solid 4px #ee6c4d;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.project-link:hover {
+    color: #ee6c4d;
+    border-bottom: solid 4px #ee6c4d;
+    cursor: pointer;
+
+}
+
+.git-link {
+    font-size: 2.5vw;
+}
+
+.git-link:hover {
+    color: #ee6c4d;
+    border-bottom: solid 1px #ee6c4d;
+}
+
+.resume-links {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.portfolio-images {
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.portfolio-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 45px;
+
+}
+
+.project {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.project-title {
+    font-size: 6vw;
+    margin: 15px 0;
+    padding: 4px;
+    border-bottom: 4px solid #ee6c4d;
+}
+
+.project-image {
+    max-width: 40vw;
+    border: 2px solid #ee6c4d;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.project-description {
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 10px 0 10px 0;
+}
+
+.project-link {
+    font-size: 3.5vw;
+    margin: 8px;
+}
+
+.drop-down {
+    display: flex;
+    justify-content: center;
+}
+
+.open-cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.close-cat {
+    border: none;
+    background: none;
+    color: #ee6c4d;
+    
+}
+
+.close-cat:hover {
+    border-bottom: 2px solid #ee6c4d;
+    cursor: pointer;
+}
+
+/* -- JOB ------------------------------------- */
+.job-container,
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90%;
+    /* border-bottom: 5px solid #293241; */
+    /* margin-bottom: 50px; */
+
+}
+
+.job-info,
+.education-info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.job-title,
+.education-title {
+    font-size: 3vw;
+    color: #ee6c4d;
+    padding-bottom: 5px;
+}
+
+.job-tagline {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.job-tagline > h4,
+.education-tagline > h4,
+.college > h4 {
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 2.5vw;
+
+}
+
+.job-description {
+    width:70%;
+    padding:5px 25px 25px 25px;
+}
+
+.job-skill {
+    font-weight: 400;
+    padding-bottom: 8px;
+    font-size: 2.8vw;
+}
+
+
+/* -- EDUCATION -------------------------------- */
+.education-tagline {
+    display: flex;
+    justify-content: space-around;
+}
+
+.education-info {
+    margin-bottom: 20px;
+}
+
+.college {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- SKILLS ------------------------------------ */
+
+
+/* -- TETRIS ----------------------------------- */
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+.landing-title {
+    font-size: 50px;
+}
+
+.header-info {
+    font-size: 30px;
+}
+
+.skill {
+    font-size: 25px;
+}
+
+.tagline {
+    font-size: 25px;
+
+}
+
+.landing-cat, .project-link {
+    font-size: 35px;
+}
+
+.git-link {
+    font-size: 25px;
+}
+
+.project-image {
+    max-width: 450px;
+    margin: 10px;
+
+}
+
+.project-description {
+    font-size: 25px;
+}
+
+
+/* -- JOB ------------------------------------- */
+.job-title {
+    font-size: 45px;
+}
+
+.job-tagline > h4 {
+    font-size: 25px;
+
+}
+
+.job-skill {
+    font-weight: 400;
+    padding-bottom: 8px;
+    font-size: 28px;
+}
+
+    
+}

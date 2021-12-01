@@ -1,0 +1,96 @@
+/* Grid Square */
+.grid-square {
+  /* border-style: solid; */
+  width: var(--tile-size);
+  height: var(--tile-size);
+  /* border-width: var(--border-width);
+  border-left-color: var(--border-left-color);
+  border-top-color: var(--border-top-color);
+  border-right-color: var(--border-right-color);
+  border-bottom-color: var(--border-bottom-color); */
+   border-radius: 4px;
+}
+
+.grid-board {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
+  grid-area: c;
+  grid-gap: 1px; /* Add a gap! */
+}
+
+/* Next Block */
+.next-block {
+  display: grid;
+  grid-template-columns: repeat(4, var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
+  grid-area: l; /* Grid area l left column */
+  grid-gap: 1px; /* Add a gap! */
+}
+/* score-board */
+.score-board {
+  grid-area: r;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-board-button {
+  display: block;
+  padding: 1em;
+  border: none;
+  background: none;
+  margin: 2px;
+  /* border-top-color: var(--button-color-t);
+  border-left-color: var(--button-color-l);
+  border-right-color: var(--button-color-r);
+  border-bottom-color: var(--button-color-b); */
+  grid-area: r;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.score {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+
+/* controls */
+.controls {
+  grid-area: b;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Control Button */
+.control-button {
+  --size: calc(var(--tile-size) * 2.5);
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  display: block;
+  border: none;
+  margin: 2px;
+  background: none;
+  /* border-top-color: var(--button-color-t);
+  border-left-color: var(--button-color-l);
+  border-right-color: var(--button-color-r);
+  border-bottom-color: var(--button-color-b); */
+}
+
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.arrows {
+  font-size: 30px;
+}
