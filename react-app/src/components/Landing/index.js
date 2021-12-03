@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Tetris from '../Tetris';
 import './Landing.css'
 import Footer from '../Footer';
+import SubmitMessage from '../Contact/Contact';
 
 
 function Landing(){
@@ -106,6 +107,9 @@ function Landing(){
 
             <div className="tetris-container">
                 <Tetris/>
+            </div>
+            <div className='contact-form-container'>
+                <SubmitMessage />
             </div>
 
 

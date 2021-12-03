@@ -90,7 +90,7 @@ orange: #ee6c4d */
 }
 
 .landing-cat {
-    font-size: 3.5vw;
+    font-size: 20px;
     padding: 3px;
     /* border: 3px solid #ee6c4d; */
     border-radius: 8px;
@@ -157,7 +157,7 @@ orange: #ee6c4d */
 }
 
 .project-title {
-    font-size: 6vw;
+    font-size: 30px;
     margin: 15px 0;
     padding: 4px;
     border-bottom: 4px solid #ee6c4d;
@@ -286,7 +286,7 @@ orange: #ee6c4d */
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 
 .landing-title {
     font-size: 50px;
@@ -301,7 +301,7 @@ orange: #ee6c4d */
 }
 
 .tagline {
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -326,19 +326,24 @@ orange: #ee6c4d */
 
 /* -- JOB ------------------------------------- */
 .job-title {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .job-tagline > h4 {
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
 .job-skill {
-    font-weight: 400;
+    /* font-weight: 400; */
     padding-bottom: 8px;
-    font-size: 28px;
+    font-size: 20px;
+}
+
+
+.skills-container {
+    width: 80%;
 }
 
     
-}
+} 

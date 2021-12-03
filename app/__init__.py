@@ -4,15 +4,19 @@ from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from flask_login import LoginManager
+from flask_mail import Mail, Message
+
 
 from .models import db, User
 from .api.user_routes import user_routes
 from .api.auth_routes import auth_routes
 from .api.score_routes import tetris_routes
-
+from .api.contact_routes import contact_routes
 from .seeds import seed_commands
 
 from .config import Config
+
+mail = Mail()
 
 app = Flask(__name__)
 
@@ -33,6 +37,17 @@ app.config.from_object(Config)
 app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
 app.register_blueprint(tetris_routes, url_prefix='/api/tetris')
+app.register_blueprint(contact_routes, url_prefix='/api/contact')
+
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
+app.config["MAIL_USERNAME"] = 'dusty.mumphrey@gmail.com'
+app.config["MAIL_PASSWORD"] = 'Michelle!1015'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
+mail.init_app(app)
 db.init_app(app)
 Migrate(app, db)
 

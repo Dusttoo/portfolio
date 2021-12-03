@@ -16,54 +16,36 @@ function JobHistory(){
                     <h4>July 2020 - June 2021</h4>
                 </div>
                 <ul className="job-description">
-                    <li className="job-skill">Assists customers in navigating our desktop, mobile, and online software.</li> 
-                    <li className="job-skill">Troubleshoots issues quickly and efficiently.</li>
-                    <li className="job-skill">Builds customer rapport by assisting in a friendly and welcoming manner.</li> 
-                    <li className="job-skill">Effectively documents every case.</li>
+                    <li className="job-skill">Assisted customers in navigating desktop, mobile, and online software.</li> 
+                    <li className="job-skill">Helped troubleshoot issues quickly and efficiently, with an average resolve rate of 367 seconds.</li>
+                    <li className="job-skill">Increased customer rapport by assisting in a friendly and welcoming manner.</li> 
+                    <li className="job-skill">Maintained a 100% documentation rate.</li>
                 </ul>
             </div>
 
             <div className="job-info">
-                <h3 className="job-title">Customer Service Representative</h3>
+                <h3 className="job-title">Etsy shop owner</h3>
                 <div className="job-tagline">
-                    <h4>Arise</h4>
-                    <h4>March 2019 - June 2021</h4>
+                    <h4>Self Employed	</h4>
+                    <h4>January 2017 - Current</h4>
                 </div>
                 <ul className="job-description">
-                    <li className="job-skill">Handles inbound calls for roadside assistance and dispatches the necessary help.</li>
-                    <li className="job-skill">Empathizes with customers under stress.</li>
-                    <li className="job-skill">Confidentially handles client information.</li>
-                    <li className="job-skill">Successfully multitasks and navigates software, while actively listening to the customer.</li>
-                    <li className="job-skill">Maintains an attendance record of 98% or above.</li>
+                    <li className="job-skill">Effectively marketed a business using SEO and advertising, bringing monthly views to upwards of 10,000 a month.</li>
+                    <li className="job-skill">Boosted average monthly revenue to $4,000 after only 3 months in business and have continued to increase by roughly 2% each month</li>
+                    <li className="job-skill">Created quality connections with customers in order to boost the rapport of my company.</li>
                 </ul>
             </div>
 
             <div className="job-info">
-                <h3 className="job-title">Cashier Customer Service</h3>
+                <h3 className="job-title">Food Service Manager</h3>
                 <div className="job-tagline">
-                    <h4>Target</h4>
-                    <h4>May 2018 - December 2020</h4>
+                    <h4>Multiple companies</h4>
+                    <h4>August 2014 - May 2018 </h4>
                 </div>
                 <ul className="job-description">
-                    <li className="job-skill">Responsible for cashing out members and assisting to unload and upload groceries effectively and efficiently.</li>
-                    <li className="job-skill">Ensure efficiency in client membership program through extensive marketing strategy development and monitoring.</li>
-                    <li className="job-skill">Portray excellent communication skills to effectively connect and interact with guests, employees, and management.</li>
-                    <li className="job-skill">Replenishing products on shelves during shift.</li>
-                    <li className="job-skill">Ensuring guest satisfaction was at 100%.</li>
-                </ul>
-            </div>
-
-            <div className="job-info">
-                <h3 className="job-title">Shift Lead</h3>
-                <div className="job-tagline">
-                    <h4>Panda Express</h4>
-                    <h4>March 2015 - May 2018</h4>
-                </div>
-                <ul className="job-description">
-                    <li className="job-skill">Oversaw and coordinated food preparation for dine-in, to-go, drive-thru, and catering orders.</li>
-                    <li className="job-skill">Preformed multiple operational functions including purchasing, inventory planning and control, food quality, and budget management.</li>
-                    <li className="job-skill">Focused efforts on cost efficiencies, process improvements, productivity, and bottom-line profitability.</li>
-                    <li className="job-skill">Established quality standards and performance metrics to maintain food safety regulations.</li>
+                    <li className="job-skill">Accelerated revenue by effectively monitoring inventory, connecting with customers, and increasing morale within my team.</li>
+                    <li className="job-skill">Influenced a change in the operation of company catering systems that increased revenue by 5% in the first month it was implemented.</li>
+                    <li className="job-skill">Unified crew members to create a welcoming atmosphere in order to improve employee performance, and in turn, positively impacting customer satisfaction.</li>
                 </ul>
             </div>
         </div>

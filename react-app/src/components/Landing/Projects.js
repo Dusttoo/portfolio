@@ -13,7 +13,7 @@ function Projects(){
                 <div className="project">
                     <img className="project-image" src="https://i.imgur.com/Kvk8INA.gif" alt="kelp" />
                     <a href="https://kelp-reviews.herokuapp.com/" target="_blank" rel="noreferrer" className='project-link'>Kelp: Yelp Clone</a>
-                    <p className="project-description">
+                    <p className="project-description" >
                       <ul>
                         <li>Designed a search feature to allow users to quickly and effectively locate businesses.</li>
                         <li>Utilized Google API to implement custom maps and markers allowing for a more realistic approach to my app of a fictional world.</li>
