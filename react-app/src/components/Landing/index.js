@@ -14,7 +14,7 @@ function Landing(){
     const [education, setOpenEducation] = useState(false)
     const [skills, setOpenSkills] = useState(false)
     const [projects, setOpenProjects] = useState(true)
-
+    const [success, setSuccess] = useState(false)
     const openJob = () => {
         if(!job) {
         setOpenJob(true)
@@ -104,12 +104,17 @@ function Landing(){
                 </div> : <></>}
             </div>
             {projects ? <Projects /> : <></>}
-
-            <div className="tetris-container">
-                <Tetris/>
-            </div>
-            <div className='contact-form-container'>
-                <SubmitMessage />
+            <div className='extra-content'>
+                <div className="tetris-container">
+                    <Tetris/>
+                </div>
+                <div className='contact-form-container'>
+                    {success ? 
+                    <h2 className='success'>Message sent succesfully</h2> :
+                    <SubmitMessage setSuccess={setSuccess}/>
+                    }
+                    
+                </div>
             </div>
 
 

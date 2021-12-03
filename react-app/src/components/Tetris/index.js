@@ -8,12 +8,7 @@ import '../../App.css'
 import { useSelector } from 'react-redux';
 
 function Tetris() {
-// console.log(e.keycode)
-//   let keycode = e.key;
-//   // useEffect(() => {
-//   //   console.log(keycode)
-//   // }, [e, keycode])
-//   // 
+
     const scores = useSelector((state) => state.highScores)
     const eachScore = []
     Object.values(scores).map((score) => (eachScore.push(score)))
@@ -22,7 +17,6 @@ function Tetris() {
         let highest = 0;
         let highestId = 0;
         eachScore.map((score) => {
-             console.log(score)
             if (score.score >= highest) {
                 highestId = score.id
                 highest = score.score
@@ -46,6 +40,7 @@ function Tetris() {
       <ScoreBoard />
       <Controls />
       <MessagePopup />
+      
     </div>
   );
 }

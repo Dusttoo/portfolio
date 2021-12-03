@@ -12,10 +12,6 @@ export default function Controls() {
         
     }
 
-    // const handleKeyPress = (e) => {
-    //     console.log(e, e.key)
-
-    // }
 
     const isRunning = useSelector((state) => state.isRunning)
     const gameOver = useSelector((state) => state.game.gameOver)

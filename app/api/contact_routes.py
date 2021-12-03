@@ -32,6 +32,6 @@ def contact():
       """ % (form.name.data, form.email.data, form.message.data)
       app.mail.send(msg)
 
-      return 'Form posted.'
+      return {'success': 'true'}
   return {'errors': validation_errors_to_error_messages(form.errors)}, 401
   

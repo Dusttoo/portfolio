@@ -1,13 +1,7 @@
 /* Grid Square */
 .grid-square {
-  /* border-style: solid; */
   width: var(--tile-size);
   height: var(--tile-size);
-  /* border-width: var(--border-width);
-  border-left-color: var(--border-left-color);
-  border-top-color: var(--border-top-color);
-  border-right-color: var(--border-right-color);
-  border-bottom-color: var(--border-bottom-color); */
    border-radius: 4px;
 }
 
@@ -43,10 +37,6 @@
   border: none;
   background: none;
   margin: 2px;
-  /* border-top-color: var(--button-color-t);
-  border-left-color: var(--button-color-l);
-  border-right-color: var(--button-color-r);
-  border-bottom-color: var(--button-color-b); */
   grid-area: r;
 }
 
@@ -79,10 +69,7 @@
   border: none;
   margin: 2px;
   background: none;
-  /* border-top-color: var(--button-color-t);
-  border-left-color: var(--button-color-l);
-  border-right-color: var(--button-color-r);
-  border-bottom-color: var(--button-color-b); */
+
 }
 
 

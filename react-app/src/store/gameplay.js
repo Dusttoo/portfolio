@@ -109,13 +109,10 @@ const gameReducer = (state = defaultState(), action) => {
   // TODO: Check and Set level
   // Score increases decrease interval
   const returnCheck = checkRows(newGrid, currentLevel, score, rowsCompleted, gameOver)
-  console.log(returnCheck)
   newState.score = returnCheck.score
   newState.rowsCompleted = returnCheck.rowsCompleted
   newState.currentLevel = returnCheck.currentLevel
   newState.speed = speed - (returnCheck.currentLevel * 10)
-  console.log(typeof(returnCheck.currentLevel))
-  console.log(newState.speed, "=speed")
 
   return newState
 

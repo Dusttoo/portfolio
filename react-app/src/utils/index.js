@@ -248,10 +248,8 @@ export const checkRows = (grid, currentLevel, score, rowsCompleted, speed, gameO
     totalScore = totalScore + score
     currentLevel = currentLevel + 1
     rowsCompleted = 0
-    console.log("total score", totalScore)
 
   }
-  console.log(typeof(score), typeof(totalScore))
 
   
   if(gameOver) {

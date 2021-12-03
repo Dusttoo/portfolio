@@ -12,9 +12,8 @@ export const sendMessage = (message) => async (dispatch) => {
     body: JSON.stringify(message),
   });
   const sentMessage = await response.json();
-  console.log('sent', sentMessage)
   dispatch(addContact(message));
-  return message
+  return sentMessage
 };
 
 // const scoreReducer = (state = {}, action) => {
