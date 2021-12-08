@@ -16,19 +16,3 @@ export const sendMessage = (message) => async (dispatch) => {
   return sentMessage
 };
 
-// const scoreReducer = (state = {}, action) => {
-//     switch(action.type) {
-//     case LOAD_SCORES:
-//       const newScore = { ...state };
-//       action.scores.scores.forEach(score => {
-//         newScore[score.id] = score;
-//       });
-//       return newScore;
-//       case ADD_SCORE:
-//       return { ...state };
-//       default:
-//       return state
-//   }
-// }
-
-// export default scoreReducer

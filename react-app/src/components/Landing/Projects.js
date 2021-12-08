@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectModal from '../ProjectModal';
 import './Landing.css'
 
 
@@ -13,6 +14,7 @@ function Projects(){
                 <div className="project">
                     <img className="project-image" src="https://i.imgur.com/Kvk8INA.gif" alt="kelp" />
                     <a href="https://kelp-reviews.herokuapp.com/" target="_blank" rel="noreferrer" className='project-link'>Kelp: Yelp Clone</a>
+                    <ProjectModal />
                     <p className="project-description" >
                       <ul>
                         <li>Designed a search feature to allow users to quickly and effectively locate businesses.</li>
