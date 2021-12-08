@@ -4,21 +4,35 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import './Project.css';
 
-function Project({setShowModal}) {
+function Project({setShowModal, project }) {
   const dispatch = useDispatch();
   // const modalContext = useContext(ModalContext)
   const close = () => {
     setShowModal(false)
   }
+  console.log( project)
 
 
   return (
     <>
-      <div className='project-content'>
+      <div className='project-modal-content'>
         <div className='close-container'>
           <FontAwesomeIcon icon={faX} className='close-icon' onClick={close}/>
         </div>
-        <h1>Project details</h1>
+        <div className="modal-project">
+          <div className='modal-project-image' style={{backgroundImage: `url(${project.image})`}} />
+          <div className='modal-details'>
+            <a href={project.link} target="_blank" rel="noreferrer" className='modal-project-link'>{project.name}</a>
+            <p className="modal-project-description" >
+              <ul className='points-list'>
+                {project.points.map(point => (
+                <li className='point'>{point}</li>
+              ))}
+              </ul>
+            </p>
+            <p><a className="modal-git-link" href={project.github} target="_blank" rel="noreferrer">Github Repository</a></p>
+          </div>
+        </div>
       </div>
     </>
   );

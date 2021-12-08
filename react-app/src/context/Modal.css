@@ -28,8 +28,8 @@
   border-radius: 10px;
   border: 10px solid #293241;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   background-color: white;
   margin: auto;
   width: 75%;

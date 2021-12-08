@@ -105,12 +105,12 @@ orange: #ee6c4d */
     cursor: pointer;
 }
 
-.project-link:hover {
+/* .project-link:hover {
     color: #ee6c4d;
     border-bottom: solid 4px #ee6c4d;
     cursor: pointer;
 
-}
+} */
 
 .git-link {
     font-size: 2.5vw;

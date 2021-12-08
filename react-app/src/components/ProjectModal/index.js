@@ -4,15 +4,15 @@ import Project from './Project';
 import './Project.css';
 
 
-function ProjectModal() {
+function ProjectModal({project}) {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
       <button className="project" onClick={() => setShowModal(true)}>Learn More</button>
       {showModal && (
-        <Modal onClose={() => setShowModal(false)}>
-          <Project setShowModal={setShowModal}/> 
+        <Modal onClose={() => setShowModal(false) }>
+          <Project setShowModal={setShowModal} project={project}/> 
         </Modal>
       )}
     </>
