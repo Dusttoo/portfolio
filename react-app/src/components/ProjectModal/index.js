@@ -6,10 +6,21 @@ import './Project.css';
 
 function ProjectModal({project}) {
   const [showModal, setShowModal] = useState(false);
+  const [text, setText] = useState(false)
+  const showText = () => {
+    setText(true)
+  }
+
+  const hideText = () => {
+    setText(false)
+  }
 
   return (
     <>
-      <button className="project" onClick={() => setShowModal(true)}>Learn More</button>
+      <button className="project-button" 
+      onClick={() => setShowModal(true)} 
+      onMouseEnter={showText}
+      onMouseLeave={hideText}>{text && <p className='learn'>Learn More</p>}</button>
       {showModal && (
         <Modal onClose={() => setShowModal(false) }>
           <Project setShowModal={setShowModal} project={project}/> 

@@ -5,12 +5,9 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 import './Project.css';
 
 function Project({setShowModal, project }) {
-  const dispatch = useDispatch();
-  // const modalContext = useContext(ModalContext)
   const close = () => {
     setShowModal(false)
   }
-  console.log( project)
 
 
   return (
@@ -30,7 +27,7 @@ function Project({setShowModal, project }) {
               ))}
               </ul>
             </p>
-            <p><a className="modal-git-link" href={project.github} target="_blank" rel="noreferrer">Github Repository</a></p>
+            <p className="modal-git-link"><a  href={project.github} target="_blank" rel="noreferrer">Github Repository</a></p>
           </div>
         </div>
       </div>

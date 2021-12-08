@@ -12,6 +12,7 @@ orange: #ee6c4d */
     width: 100%;
     position: fixed;
     top:0;
+    z-index: 100;
 
 }
 

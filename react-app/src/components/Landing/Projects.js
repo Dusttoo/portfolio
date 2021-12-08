@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectModal from '../ProjectModal';
 import './Landing.css'
 
 
 function Projects(){
+  const [modal, setModal] = useState(false)
 
   const projects = [
     {
@@ -44,6 +45,15 @@ function Projects(){
     image: 'https://media.giphy.com/media/LWW1gQfoN5rbPw3cQc/giphy.gif',
   }
   ]
+
+  const showButton = () => {
+    if(modal) {
+      setModal(false)
+    } else {
+      setModal(true)
+    }
+
+  }
   
 
   return (
@@ -52,9 +62,8 @@ function Projects(){
             <h2 className="project-title">Projects</h2>
               <div className="portfolio-row">
                 {projects.map(project => (
-                  <div className="project">
-                    <img className="project-image" src={project.image} alt="kelp" />
-                    <a href={project.link} target="_blank" rel="noreferrer" className='project-link'>{project.name}</a>
+                  <div className="project" >
+                    <img className="project-image" src={project.image} alt="kelp"/>
                     <ProjectModal project={project}/>
                   </div>
                 ))}
