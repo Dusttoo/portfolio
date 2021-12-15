@@ -43,6 +43,16 @@ function Projects(){
   ],
     github: 'https://github.com/nevinchow/MusicHub',
     image: 'https://media.giphy.com/media/LWW1gQfoN5rbPw3cQc/giphy.gif',
+  }, {
+    id: 4,
+    name: 'Local Business Page - Texas Top Notch Frenchies',
+    link: 'https://texastopnotchfrenchies.herokuapp.com/',
+    points: ['Local business website equipped with fully functional admin portal.',
+    'Owner can edit and style pages from their own private portal',
+    'Designed original UI using HTML and CSS to create a user-friendly experience.',
+  ],
+    github: 'https://github.com/Dusttoo',
+    image: 'https://media.giphy.com/media/2BuwP2cO1xKY4FbcA1/giphy.gif',
   }
   ]
 
@@ -60,6 +70,8 @@ function Projects(){
     <>
         <div className="portfolio-images">
             <h2 className="project-title">Projects</h2>
+            <h2 className="project-subtitle">Click an image to learn more about a project</h2>
+
               <div className="portfolio-row">
                 {projects.map(project => (
                   <div className="project" >

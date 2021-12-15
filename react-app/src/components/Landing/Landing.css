@@ -136,6 +136,8 @@ orange: #ee6c4d */
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border-top: 5px solid #293241;
+    margin-top: 15px;
 
 }
 
@@ -162,6 +164,20 @@ orange: #ee6c4d */
 
 }
 
+.project-title {
+    margin: 10px;
+    font-size: 25px;
+    color: #293241;
+
+}
+
+.project-subtitle {
+    font-size: 15px;
+    margin: 5px;
+    color: #293241;
+
+}
+
 
 .project-image {
     height: 150px;
@@ -174,6 +190,7 @@ orange: #ee6c4d */
 .drop-down {
     display: flex;
     justify-content: center;
+    
 }
 
 .open-cat {
@@ -295,7 +312,7 @@ orange: #ee6c4d */
 /* -- TETRIS ----------------------------------- */
 
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 950px) {
     .extra-content {
     flex-direction: column;
 }
@@ -321,8 +338,18 @@ orange: #ee6c4d */
 
 }
 
-.landing-cat, .project-link {
+.landing-cat, .project-link,
+.project-title {
     font-size: 25px;
+}
+
+.project-title {
+    margin: 10px;
+}
+
+.project-subtitle {
+    font-size: 15px;
+    margin: 5px;
 }
 
 .git-link {

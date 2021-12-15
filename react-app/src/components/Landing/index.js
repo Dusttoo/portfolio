@@ -87,23 +87,23 @@ function Landing(){
                 <h2 className="landing-cat" onClick={openSkills}>Skills</h2>
             </div>
             <div className="dropdown">
-                {job ? 
+                {job && 
                 <div className="open-cat"> 
                     <JobHistory /> 
                     <button className="close-cat" onClick={closeAll}>close</button>
-                </div>: <></>}
-                {education ? 
+                </div>}
+                {education && 
                 <div className="open-cat"> 
                     <Education /> 
                     <button className="close-cat" onClick={closeAll}>close</button>
-                </div>: <></>}
-                {skills ? 
+                </div>}
+                {skills && 
                 <div className="open-cat"> 
                     <Skills /> 
                     <button className="close-cat" onClick={closeAll}>close</button>
-                </div> : <></>}
+                </div> }
             </div>
-            {projects ? <Projects /> : <></>}
+            {projects && <Projects /> }
             <div className='extra-content'>
                 <div className="tetris-container">
                     <Tetris/>
