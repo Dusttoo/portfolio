@@ -77,7 +77,7 @@ function Landing(){
                     team where I can help influence a real change in the world that we live in. I have a working 
                     knowledge of JavaScript, Node, Express, React, CSS, Python, PostgreSQL, Flask and am constantly 
                     pushing myself to learn more.</p>
-                    
+                    <a href='https://pdfhost.io/v/IMJBXF2vh_Mumphrey_Dusty_Resume' target="blank" className="tagline">Download Resume</a>
                 </div>
                 
             </div>
